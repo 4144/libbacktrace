@@ -36,9 +36,9 @@ AC_CONFIG_HEADER(config.h)
 AC_CONFIG_MACRO_DIR(config)
 
 # with_target_subdir is used when configured as part of a GCC tree.
-if test -n "${with_target_subdir}"; then
-  AM_ENABLE_MULTILIB(, ..)
-fi
+#if test -n "${with_target_subdir}"; then
+#  AM_ENABLE_MULTILIB(, ..)
+#fi
 
 AC_CANONICAL_SYSTEM
 target_alias=${target_alias-$host_alias}
